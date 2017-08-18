@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>vue01</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css" />
+  <style type="text/css">
+    body {
+      padding-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="root" class="container">
+    <progress-view inline-template>
+      <div>
+
+        <h1>You Progress Through This Course Is {{ completionRate }}</h1>
+
+        <p>
+          <button @click="completionRate += 10">Update Completion Rate</button>
+        </p>
+      </div>
+    </progress-view>
+  </div>
+
+  <script src="https://unpkg.com/vue"></script>
+
+  <script src="src/main08.js"></script>
+
+</body>
+
+</html>
